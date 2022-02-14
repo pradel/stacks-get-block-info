@@ -16,3 +16,6 @@
 
 (define-read-only (get-block-info-miner-address (block-height-expr uint))
   (get-block-info? miner-address block-height-expr))
+
+(define-read-only (get-block-info-vrf-seed (block-height-expr uint))
+  (get-block-info? vrf-seed block-height-expr))
