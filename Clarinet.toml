@@ -1,0 +1,14 @@
+[project]
+name = "get-block-info"
+authors = []
+telemetry = false
+[repl.analysis]
+passes = ["check_checker"]
+[repl.analysis.check_checker]
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+# [contracts.counter]
+# path = "contracts/counter.clar"
+# depends_on = []
