@@ -9,4 +9,7 @@
   (get-block-info? header-hash block-height-expr))
 
 (define-read-only (get-block-info-burnchain-header-hash (block-height-expr uint))
-  (get-block-info? header-hash block-height-expr))
+  (get-block-info? burnchain-header-hash block-height-expr))
+
+(define-read-only (get-block-info-id-header-hash (block-height-expr uint))
+  (get-block-info? id-header-hash block-height-expr))

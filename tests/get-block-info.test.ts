@@ -56,3 +56,20 @@ Clarinet.test({
     assertEquals(typeof block.receipts[0].result, "string");
   },
 });
+
+Clarinet.test({
+  name: "Can get get-block-info id-header-hash",
+  async fn(chain: Chain, accounts: Map<string, Account>) {
+    let wallet_1 = accounts.get("wallet_1")!;
+    let block = chain.mineBlock([
+      Tx.contractCall(
+        "get-block-info",
+        "get-block-info-id-header-hash",
+        [types.uint(0)],
+        wallet_1.address
+      ),
+    ]);
+    block.receipts[0].result.expectSome();
+    assertEquals(typeof block.receipts[0].result, "string");
+  },
+});
