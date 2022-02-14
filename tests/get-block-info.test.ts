@@ -10,8 +10,8 @@ import { assertEquals } from "https://deno.land/std@0.90.0/testing/asserts.ts";
 Clarinet.test({
   name: "Can get get-block-info time",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-time",
@@ -26,8 +26,8 @@ Clarinet.test({
 Clarinet.test({
   name: "Can get get-block-info header-hash",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-header-hash",
@@ -43,8 +43,8 @@ Clarinet.test({
 Clarinet.test({
   name: "Can get get-block-info burnchain-header-hash",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-burnchain-header-hash",
@@ -60,8 +60,8 @@ Clarinet.test({
 Clarinet.test({
   name: "Can get get-block-info id-header-hash",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-id-header-hash",
@@ -77,8 +77,8 @@ Clarinet.test({
 Clarinet.test({
   name: "Can get get-block-info miner-address",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-miner-address",
@@ -94,8 +94,8 @@ Clarinet.test({
 Clarinet.test({
   name: "Can get get-block-info vrf-seed",
   async fn(chain: Chain, accounts: Map<string, Account>) {
-    let wallet_1 = accounts.get("wallet_1")!;
-    let block = chain.mineBlock([
+    const wallet_1 = accounts.get("wallet_1")!;
+    const block = chain.mineBlock([
       Tx.contractCall(
         "get-block-info",
         "get-block-info-vrf-seed",
