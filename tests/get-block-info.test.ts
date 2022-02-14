@@ -9,7 +9,7 @@ import { assertEquals } from "https://deno.land/std@0.90.0/testing/asserts.ts";
 
 Clarinet.test({
   name: "Can get get-block-info time",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
@@ -25,7 +25,7 @@ Clarinet.test({
 
 Clarinet.test({
   name: "Can get get-block-info header-hash",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
@@ -42,7 +42,7 @@ Clarinet.test({
 
 Clarinet.test({
   name: "Can get get-block-info burnchain-header-hash",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
@@ -59,7 +59,7 @@ Clarinet.test({
 
 Clarinet.test({
   name: "Can get get-block-info id-header-hash",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
@@ -76,7 +76,7 @@ Clarinet.test({
 
 Clarinet.test({
   name: "Can get get-block-info miner-address",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
@@ -93,7 +93,7 @@ Clarinet.test({
 
 Clarinet.test({
   name: "Can get get-block-info vrf-seed",
-  async fn(chain: Chain, accounts: Map<string, Account>) {
+  fn(chain: Chain, accounts: Map<string, Account>) {
     const wallet_1 = accounts.get("wallet_1")!;
     const block = chain.mineBlock([
       Tx.contractCall(
