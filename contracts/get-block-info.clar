@@ -13,3 +13,6 @@
 
 (define-read-only (get-block-info-id-header-hash (block-height-expr uint))
   (get-block-info? id-header-hash block-height-expr))
+
+(define-read-only (get-block-info-miner-address (block-height-expr uint))
+  (get-block-info? miner-address block-height-expr))
