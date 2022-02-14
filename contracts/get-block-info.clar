@@ -2,14 +2,8 @@
 ;; get-block-info
 ;; <add a description here>
 
-;; constants
-;;
+(define-read-only (get-block-info-time (block-height-expr uint))
+  (get-block-info? time block-height-expr))
 
-;; data maps and vars
-;;
-
-;; private functions
-;;
-
-;; public functions
-;;
+(define-read-only (get-block-info-header-hash (block-height-expr uint))
+  (get-block-info? header-hash block-height-expr))
