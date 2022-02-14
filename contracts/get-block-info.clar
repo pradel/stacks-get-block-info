@@ -1,6 +1,6 @@
 
 ;; get-block-info
-;; <add a description here>
+;; Expose the get-block-info clarity values so they can be used outside of smart contracts.
 
 (define-read-only (get-block-info-time (block-height-expr uint))
   (get-block-info? time block-height-expr))
