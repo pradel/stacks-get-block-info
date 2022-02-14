@@ -16,7 +16,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-time",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome().expectUint(0);
@@ -32,7 +32,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-header-hash",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome();
@@ -49,7 +49,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-burnchain-header-hash",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome();
@@ -66,7 +66,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-id-header-hash",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome();
@@ -83,7 +83,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-miner-address",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome();
@@ -100,7 +100,7 @@ Clarinet.test({
         "get-block-info",
         "get-block-info-vrf-seed",
         [types.uint(0)],
-        wallet_1.address
+        wallet_1.address,
       ),
     ]);
     block.receipts[0].result.expectSome();
